@@ -285,7 +285,7 @@ Open the user interface by navigating to `http://localhost:5173` in a browser.
 1.  To add a bill, click the `Add new bill` button in the top bar of the interface.
 2.  Complete the `Bill From` field with the name of the billing entity, select a bill type from the `Bill Type` drop-down list, enter the amount due (floating point field), and select the due date (you can use the date picker).
 
-![This illustrates adding a bill.](https://github.com/Andrew-Tharp/Bill-Manager/blob/main/readme-images/AddBill.jpg "Adding a bill")
+![This illustrates adding a bill.](readme-images/AddBill.JPG "Adding a bill")
 
 ### Using the bill list
 
@@ -296,38 +296,38 @@ The bill list shows all bill information in a tabular form.
 - There are `Pay` (disabled if paid in full), `Update`, and `Delete` buttons that cause different dialogs to be displayed to change bill information.
 
 Following is the bill list after one bill has been paid in full.
-![This shows the bill list.](./readme-images/BillList-AfterPayInFull.jpg "Bill list")
+![This shows the bill list.](readme-images/BillList-AfterPayInFull.JPG "Bill list")
 
 ### Search for a bill
 
 Enter any text string and a string-based search bill be conducted for all fields to show bills that have matching information.
 
 Below is an illustration of searching for the word `Electric`.
-![This shows the bill search function.](./readme-images/SearchForABill.jpg "Search the bill list")
+![This shows the bill search function.](readme-images/SearchForABill.JPG "Search the bill list")
 
 ### Pay a bill
 
 Enter values in the `Amount Paid`, `Date Paid`, and `Paid By` fields.  The rest of the fields are read only and the details match what was entered previously.  There is no need to set `Payment Made?` and `Paid In Full?` because these values are set programatically.
 
 The payment panel looks like this before entering payment information:
-![Bill payment panel before entering information](./readme-images/PayBill-BeforeInput.jpg "Bill payment panel before entering information")
+![Bill payment panel before entering information](readme-images/PayBill-BeforeInput.JPG "Bill payment panel before entering information")
 
 The payment panel looks like this after entering payment information:
-![Bill payment panel after entering information](./readme-images/PayBill-AfterInput.jpg "Bill payment panel after entering information")
+![Bill payment panel after entering information](readme-images/PayBill-AfterInput.JPG "Bill payment panel after entering information")
 
 The bill list will reflect changes to the `Payment Made?` and `Paid In Full?` columns and the `Pay` button will be disabled if the bill has been paid in full.
-![Bills list after payments](./readme-images/BillList-AfterPartialPayment.jpg "Bills list after payments")
+![Bills list after payments](readme-images/BillList-AfterPartialPayment.JPG "Bills list after payments")
 
 ### Update details of a bill
 
 The update option allows editing of initial fields for a bill as well as payment information.  The purpose is to allow correction of any information that was entered incorrectly.  The "Payment Made?" and "Paid In Full" fields are read-only since these values are set programatically by the server API depending on whether the payment amout equals the amount due.
 
 Following is an illustration of updating all fields that are writable.
-![Bills list after updates](./readme-images/UpdateBill.jpg "Bills list after updates")
+![Bills list after updates](readme-images/UpdateBill.JPG "Bills list after updates")
 
 ### Delete a bill
 
 Select the "Delete" button on the row for the bill that you wish to delete.  A pop-up confirmation dialog will be displayed asking if you want to delete the bill.
 
 Below is an illustration of the deletion confirmation dialog.  Also note that the "Delete" button has focus for the bill that is being deleted.
-![Deleting a bill](./readme-images/DeleteBill.jpg "Deleting a bill")
+![Deleting a bill](readme-images/DeleteBill.JPG "Deleting a bill")
