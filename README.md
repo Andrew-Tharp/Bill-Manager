@@ -80,9 +80,9 @@ Next add a `bills` table and setup the columns.
   - `datePaid` - date
   - `paidBy` - character varying
 - If you missed adding columns during the table create dialog, then go to TABLE_NAME > Properties to add missing columns.
-- An easier way to create the table is to select the `bill_manager` database in the "PgAdmin 4" interface and choose `Query Tool`.  Then enter the DDL from the `bills-table-ddl.sql` file and chose to run the script to create the table.
+- An easier way to create the table is to select the `bill_manager` database in the "PgAdmin 4" interface and choose `Query Tool`.  Then enter the DDL from the [bills-table-definition.sql](db-ddl/bills-table-definition.sql) file and chose to run the script to create the table.
 
-Next create a sequence so that the primary key will be assigned automatically.  Name the sequence `bills_billid_seq` with a starting value of one and incrementing by one when a new record is added.  The sequence can also be created from the `bills_billid_seq-ddl.sql` file.
+Next create a sequence so that the primary key will be assigned automatically.  Name the sequence `bills_billid_seq` with a starting value of one and incrementing by one when a new record is added.  The sequence can also be created from the [bills_billid_seq-ddl.sql](db-ddl/bills_billid_seq-ddl.sql) file.
 
 Issue a query against the table that was just created to confirm that it is empty.
 - `TABLE_NAME > Query tool` can be used to issue a query.

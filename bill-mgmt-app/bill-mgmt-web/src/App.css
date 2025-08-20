@@ -1,0 +1,178 @@
+/* The std-container settings apply to the div section for the entire application.
+Setting the height to 1000px helps the beige background color stay behind the popup div through the table below it.
+The value may not be large enough if the table becomes large. */
+.std-container{
+  display: block;
+  width: 900px;
+  height: 1200px;
+  margin-left: 35px;
+  margin-bottom: 300px;
+  text-align: center;
+  background-color: beige;
+}
+/* The search-box class applies styles to the box that contains a search input field and a button. */
+.search-box{
+  border: 1px solid;
+  height: 65px;
+  background-color: blanchedalmond;
+}
+/* The search-input class applies styles to the search input field. */
+.search-input{
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 300;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+/* The table-box class applies styles to the box around the table that displays bills. */
+.table-box{
+  margin-top: 15px;
+  height: 65px;
+}
+/* The addNewBillBtn class applies styles to the button for adding a new bill. */
+.addNewBillBtn{
+  width: 150px;
+  height: 30px;
+  margin-left: 25.0px;
+  font-size: 13px;
+  line-height: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+/* The table class applies styles to the table that displays bill information */
+.table{
+  width: 900px;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+/* This styles th heading elements within the table class. */
+.table th{
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid;
+  line-height: 23px;
+  text-align: center;
+  outline: none;
+  background-color: rgb(255, 203, 161);
+}
+/* This styles td table data elements within the table class. */
+.table td{
+  font-size: 10px;
+  font-weight: bold;
+  border: 1px solid;
+  line-height: 10px;
+  outline: none;
+  text-align: center;
+}
+/* This enables alternating highlighting of the rows in the table. */
+.table tr:nth-child(even){
+  background-color: blanchedalmond;
+}
+/* These two classes control styling for the "Pay", "Update", and "Delete" buttons for a particular bill. */
+.payUpdateBtns,.deleteBtn{
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 65px;
+}
+/* This applies styles to the popup div section for adding a new bill. */
+.addbillpopup{
+  width: 350px;
+  height: 375px;
+  border: 1px solid;
+  z-index: 1;
+  border-collapse: collapse;
+  background-color: rgb(241, 200, 138);
+  margin-left: 275px;
+}
+/* This applies styles to the popup div section for paying a bill. */
+.paypopup{
+  width: 350px;
+  height: 650px;
+  border: 1px solid;
+  z-index: 1;
+  border-collapse: collapse;
+  background-color: rgb(241, 200, 138);
+  margin-left: 275px;
+}
+/* This applies styles to the popup div section for updating a bill. */
+.updatebillpopup{
+  width: 350px;
+  height: 650px;
+  border: 1px solid;
+  z-index: 1;
+  border-collapse: collapse;
+  background-color: rgb(241, 200, 138);
+  margin-left: 275px;
+}
+/* This applies styles to the third-level heading (which is the title at the top of the application). */
+h3{
+  color: black;
+}
+/* This applies styles to the fourth-level headings, such as the headings for popup div sections.} */
+h4{
+  margin-top: 5px;
+  width: 300px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-left: 15px;
+  background-color: blanchedalmond;
+}
+/* This applies styles to the red X close button for all of the popup div sections. */
+.closeBtn{
+  float: right;
+  font-size: 27px;
+  font-weight: bold;
+  margin-right: 5px;
+  color: red;
+}
+/* This applies styles for displaying error messages in all of the popup div sections. */
+.error{
+  color: red;
+  margin-left: 15px;
+}
+/* This applies styles to the submit buttons for adding, paying, and updating bills. */
+.addPayUpdateColor{
+  background-color: rgb(241, 175, 32);
+}
+/* This applies styles to the submit buttons for adding, paying, and updating bills. */
+.addPayUpdateBtn{
+  width: 150px;
+  height: 35px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 10px;
+  margin-right:165px;
+}
+/* This applies styles to the delete button on a row for a bill. */
+.deletecolor{
+  background-color: rgb(243, 141, 82);
+}
+/* This applies styles to input field lables within the popup div sections for adding, paying, and updating bills. */
+.popuplabel{
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+}
+/* This applies styles to the input fields within the popup div sections for adding, paying, and updating bills. */
+.popupinput{
+  margin-left: 15px;
+  border-radius: 5px;
+  height: 27px;
+  width: 220px;
+  margin-right: 140px;
+  background-color: aliceblue;
+}
+/* Styles are applied when there is focus or hovering over a button.  This applies to the "Add new bill" button at the top, the "Pay" and "Delete" buttons in the table of bills, and the submission buttons at the bottom of the popup div sections for adding, paying, and updating bills. */
+.payUpdateBtns:hover,
+.payUpdateBtns:focus,
+.addNewBillBtn:hover,
+.addNewBillBtn:focus,
+.addPayUpdateBtn:hover,
+.addPayUpdateBtn:focus{
+  background-color: rgb(201, 103, 64);
+}
