@@ -285,7 +285,7 @@ Open the user interface by navigating to `http://localhost:5173` in a browser.
 1.  To add a bill, click the `Add new bill` button in the top bar of the interface.
 2.  Complete the `Bill From` field with the name of the billing entity, select a bill type from the `Bill Type` drop-down list, enter the amount due (floating point field), and select the due date (you can use the date picker).
 
-![This illustrates adding a bill.](readme-images/AddBill.jpg "Adding a bill")
+![This illustrates adding a bill.](https://github.com/Andrew-Tharp/Bill-Manager/blob/main/readme-images/AddBill.jpg "Adding a bill")
 
 ### Using the bill list
 
